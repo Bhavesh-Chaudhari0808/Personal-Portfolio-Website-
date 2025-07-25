@@ -1,77 +1,282 @@
+html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavesh  Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./images/developer2.webp" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills1">Skills</a></li>
+          <li><a href="#project-section">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
 
-  <header>
-    <nav>
-      <h2 class="logo">Bhavesh Yashwant Chaudhari</h2>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      </nav>
+      <div class="header-text">
+        <h1> Hi, I am <span> Yashodip</span><br>and I am a Passionate</h1>
+        <h3><span id="element"></span></h3><br>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+              <a href="./Resume/Resume_Main.pdf" class="btn btn-primary py-4 px-5" target="_blank">Download
+                CV</a>
+              <a href="" class="btn btn-primary py-4 px-5"
+                target="_blank">Visit LinkedIn</a>
+            </p>
+          </div>
 
-  <section class="hero">
-    <h1>Hello, I'm Bhavesh</h1>
-    <p>I'm a passionate Web Developer & CSE Student.</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </section>
+        </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a Computer Science student with a love for building clean, responsive websites and web apps.
-      I'm currently learning full-stack development and constantly improving my JavaScript and React skills.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Tailwind CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Express.js</li>
-      <li>MongoDB</li>
-      <li>Git</li>
-      <li>Github</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>AutoGenResume</h3>
-      <p>An AI-powered resume builder using the MERN stack.</p>
+      </div>
     </div>
-    <div class="project">
-      <h3>Skin Disease Detection</h3>
-      <p>React + Computer Vision app to detect skin conditions from images.</p>
+  </div>
+  <br>
+  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src=".jpg">
+        </div>
+        <div class="about-col-1">
+          <h1 class="sub-title">About Me</h1>
+          <p>As an enthusiastic and highly motivated recent graduate with a Master's degree in Computer Applications (MCA), I possess a strong foundation in software development, programming, and problem-solving. Throughout my academic journey, I have gained hands-on experience in various programming languages, including HTML5, CSS3, JavaScript, Bootstrap, Java, MySQL, Hibernate, and JDBC, along with exposure to web development technologies and database management systems. I am eager to apply my skills in real-world scenarios, continuously learn new technologies, and contribute to a dynamic team in a fast-paced environment. Driven by a passion for coding and software development, I strive to stay updated with the latest industry trends and best practices. I am committed to making a meaningful contribution to any organization by leveraging my technical expertise and enthusiasm for innovation.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+              <ul>
+                <li><span>KRM United Software PVT LTD <p style="color: white;">[FEB-2024 to JULY-2024]</p></span>App/Web
+                  Development Intern </li>
+                <li><span>Navodita Infotech <p style="color: white;">[JAN-2024 to FEB-2024]</p></span>Fullstack
+                  Developer
+                  Intern </li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>Pratibha Institute of business Management<p style="color: white;">[2022-2024]</p></span>Master
+                of Computer Application<br>Grade A+</li>
+              <li><span> G H Raisoni Institute of business Management<p style="color: white;"> [2019-2022]</p>
+                  </span>Bachelor of Computer Application<br>Grade A+</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: bhaveshchaudhari8767@gmail.com</p>
-    <p>LinkedIn: <a href"https://www.linkedin.com/in/bhavesh-chaudhari-10737b31b/"></a>https://www.linkedin.com/in/bhavesh-chaudhari-10737b31b</p>
-  </section>
 
-  <footer>
-    <p>© 2025 Bhavesh | All rights reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <section class="ftco-section" id="skills1">
+      <div class="container">
+        <h1 class="sub-title text-center">Skills</h1>
+        <div class="skills-list">
+          <div class="skills-entry">
+            <i class="fab fa-html5"></i>
+            <h2>HTML5</h2>
+            <p>Proficient in HTML for creating structured and semantic web pages, including forms,
+              tables, and multimedia integration.</p>
+
+          </div>
+          <div class="skills-entry">
+            <i class="fab fa-css3-alt"></i>
+            <h2>CSS3</h2>
+            <p>Proficient in CSS3 for creating responsive designs, styling web pages, and implementing
+              modern layouts using Flexbox and Grid.</p>
+          </div>
+          <div class="skills-entry">
+            <i class="fa-brands fa-bootstrap"></i>
+            <h2>Bootstrap</h2>
+            <p>Proficient in Bootstrap for creating responsive, mobile-first web designs with pre-built
+              components and custom layouts.</p>
+          </div>
+          <div class="skills-entry">
+            <i class="fab fa-js"></i>
+            <h2>JavaScript</h2>
+            <p>Experienced in JavaScript for building dynamic, interactive web applications, including
+              DOM manipulation, event handling, and asynchronous programming.</p>
+          </div>
+          <div class="skills-entry">
+            <i class="fa-brands fa-react"></i>
+            <h2>React</h2>
+            <p>Experienced in React for building dynamic, component-based user interfaces and managing
+              state with hooks and Redux.</p>
+          </div>
+          <div class="skills-entry">
+            <i class="fab fa-java"></i>
+            <h2>Java</h2>
+            <p>Proficient in Java for developing robust, scalable applications, with expertise in
+              object-oriented programming, multithreading, and data structures.</p>
+          </div>
+
+          <div class="skills-entry">
+            <i class="fab fa-php"></i>
+            <h2>PHP</h2>
+            <p>Experienced in server-side scripting and backend development with PHP.</p>
+          </div>
+
+          <div class="skills-entry">
+            <i class="fa-solid fa-database"></i>
+            <h2>MYSQL</h2>
+            <p>Proficient in MySQL for designing, managing, and optimizing relational databases,
+              including writing complex queries and ensuring data integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Project Sestion--->
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+          </div>
+          <div class="row d-flex">
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end">
+                <div class="block-20 zoom-effect" style="background-image: url('images/logo.jpg');"></div>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Clinic Management</h3>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quaerat nesciunt, modi voluptatum dicta ea repellendus ipsam rerum illum nulla id beatae ad quae tempore, repellat porro, enim quia quidem?A</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end">
+                <div class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></div>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Expense Tracker</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, est dignissimos. Repudiandae iure animi laudantium exercitationem magnam commodi repellat! Odio expedita, dolor odit deleniti labore quas minus ducimus minima dolore.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="blog-entry">
+                <div class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></div>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Weather Forecasting</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a optio ut. Amet nam, asperiores quis neque vero vel nobis repellat eligendi? Consequatur deserunt veritatis quo, cupiditate laboriosam incidunt eaque!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4 d-flex ftco-animate">
+              <div class="blog-entry justify-content-end">
+                <div class="block-20 zoom-effect"></div>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading">Krushi Seva System</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid animi, eligendi doloribus nisi sequi perspiciatis nam ut dolor iste ab tempora beatae sed ipsam voluptatem temporibus. Deleniti, ratione explicabo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+
+    <!----contact----->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:yashodipwani12004@gmail.com">yashodipwani12004@gmail.com</a>
+            </p>
+            <div class="social-icons">
+               <a href="" target="_blank">  
+                <!-- linkdin url -->
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href=" " target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+
+          </div>
+          <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="21073265-644c-426c-9b5a-8c68759814f7">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Yashodip Wani | All Rights Reserved</p>
+      </div>
+
+
+
+
+
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Fullstack Developer...', 'Front-End Developer...', 'Back-End Developer...'],
+          typeSpeed: 50,
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+          for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          document.querySelector([onclick="opentab('${tabname}')"]).classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+
+      </script>
+
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+
 </body>
+
 </html>
